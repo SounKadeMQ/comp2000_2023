@@ -35,7 +35,7 @@ public class Main extends JFrame {
         }
     }
 
-    /*void run() {
+    /*  public void run() {
         Point mousePos = this.getMousePosition();
         Canvas canvas = new Canvas(mousePos);
         this.setContentPane(canvas);
