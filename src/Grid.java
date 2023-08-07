@@ -1,7 +1,7 @@
 import javax.swing.*;
 import java.awt.*;
 
-class Grid extends JPanel{
+class Grid{
     int size;
     int display;
     int margin;
@@ -14,7 +14,6 @@ class Grid extends JPanel{
         this.mousePos = mousePos;
     }
     
-@Override
 public void paint(Graphics g) {
     for (int j=margin; j<display-margin; j+=size) {
         for (int i=margin; i<display-margin; i+= size) { 
