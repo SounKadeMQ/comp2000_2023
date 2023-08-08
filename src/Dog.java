@@ -4,11 +4,11 @@ import java.awt.Point;
 
 public class Dog extends Actor{
 
-    public Dog() {
-        cellIndex = new Cell(465,80,Color.GREEN);
+    public Dog(Cell cell) {
+        cellIndex = cell;
     }
 
     public void paint(Graphics g, Point mousePos){
-        cellIndex.paint(g, mousePos);
+        cellIndex.paint(g, mousePos,Color.GREEN);
     }
 }

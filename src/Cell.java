@@ -4,19 +4,17 @@ import java.awt.Point;
 
 public class Cell extends java.awt.Rectangle{
   static int size = 35;
-  Color colour;
 
   // constructors
-  public Cell(int inX, int inY, Color color) {
+  public Cell(int inX, int inY) {
     super.x = inX;
     super.y = inY;
     super.height = size;
     super.width = size;
-    colour = color;
   }
 
   // methods
-  public void paint(Graphics g, Point mousePos) {
+  public void paint(Graphics g, Point mousePos,Color colour) {
     if(mousePos == null) {
       mousePos = new Point (-1,-1);
     }

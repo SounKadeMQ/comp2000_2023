@@ -3,12 +3,11 @@ import java.awt.Graphics;
 import java.awt.Point;
 public class Bird extends Actor{
 
-    public Bird() {
-        cellIndex = new Cell(640,115,Color.YELLOW);
+    public Bird(Cell cell) {
+        cellIndex = cell;
     }
 
     public void paint(Graphics g,Point mousePos){
-        g.setColor(Color.YELLOW);
-        cellIndex.paint(g, mousePos);
+        cellIndex.paint(g, mousePos,Color.YELLOW);
     }
 }
