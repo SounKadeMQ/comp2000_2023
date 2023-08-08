@@ -13,7 +13,7 @@ public class Actor {
         cellIndex = cell;
     }
 
-    public void paint(Graphics g) {
-        paint(g);
+    public void paint(Graphics g){
+        g.fillOval(cellIndex.x, cellIndex.y, Cell.size, Cell.size);
     }
 }

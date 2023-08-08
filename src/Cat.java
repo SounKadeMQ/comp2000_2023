@@ -6,9 +6,10 @@ public class Cat extends Actor{
     public Cat(Cell cell) {
         cellIndex = cell;
     }
-
+    
+    @Override
     public void paint(Graphics g){
         g.setColor(Color.BLUE);
-        g.fillOval(cellIndex.x, cellIndex.y, Cell.size, Cell.size);
+        super.paint(g);
     }
 }

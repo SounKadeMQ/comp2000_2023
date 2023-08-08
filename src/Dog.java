@@ -8,8 +8,9 @@ public class Dog extends Actor{
         cellIndex = cell;
     }
 
+    @Override
     public void paint(Graphics g){
         g.setColor(Color.GREEN);
-        g.fillOval(cellIndex.x, cellIndex.y, Cell.size, Cell.size);
+        super.paint(g);
     }
 }

@@ -7,8 +7,9 @@ public class Bird extends Actor{
         cellIndex = cell;
     }
 
+    @Override
     public void paint(Graphics g){
         g.setColor(Color.YELLOW);
-        g.fillOval(cellIndex.x, cellIndex.y, Cell.size, Cell.size);
+        super.paint(g);
     }
 }
