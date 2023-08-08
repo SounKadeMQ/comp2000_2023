@@ -7,7 +7,8 @@ public class Cat extends Actor{
         cellIndex = cell;
     }
 
-    public void paint(Graphics g, Point mousePos){
-        cellIndex.paint(g, mousePos,Color.BLUE);
+    public void paint(Graphics g){
+        g.setColor(Color.BLUE);
+        g.fillOval(cellIndex.x, cellIndex.y, Cell.size, Cell.size);
     }
 }

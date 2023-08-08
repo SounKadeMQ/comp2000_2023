@@ -14,14 +14,14 @@ public class Cell extends java.awt.Rectangle{
   }
 
   // methods
-  public void paint(Graphics g, Point mousePos,Color colour) {
+  public void paint(Graphics g, Point mousePos) {
     if(mousePos == null) {
       mousePos = new Point (-1,-1);
     }
     if(super.contains(mousePos)) {
       g.setColor(Color.GRAY);
     } else {
-      g.setColor(colour);
+      g.setColor(Color.WHITE);
     }
     g.fillRect(x, y, size, size);
     g.setColor(Color.BLACK);

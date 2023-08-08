@@ -18,9 +18,9 @@ public class Stage {
 
     public void paint(Graphics g, Point mousePos){
         field.paint(g,mousePos);
-        cat.paint(g,mousePos);
-        dog.paint(g,mousePos);
-        bird.paint(g,mousePos);
+        cat.paint(g);
+        dog.paint(g);
+        bird.paint(g);
 
     }
 }

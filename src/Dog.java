@@ -8,7 +8,8 @@ public class Dog extends Actor{
         cellIndex = cell;
     }
 
-    public void paint(Graphics g, Point mousePos){
-        cellIndex.paint(g, mousePos,Color.GREEN);
+    public void paint(Graphics g){
+        g.setColor(Color.GREEN);
+        g.fillOval(cellIndex.x, cellIndex.y, Cell.size, Cell.size);
     }
 }
