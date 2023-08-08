@@ -1,8 +1,13 @@
-import java.awt.Color;
-import java.awt.Graphics;
+
 
 public class Actor {
-    public void paint(Graphics g, Cell pos) {
-        
+    Cell cellIndex;
+
+    public Actor() {
+
+    }
+
+    public Actor(Cell cell) {
+        cellIndex = cell;
     }
 }
