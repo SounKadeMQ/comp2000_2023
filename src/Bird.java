@@ -1,14 +1,14 @@
 import java.awt.Color;
 import java.awt.Graphics;
-
+import java.awt.Point;
 public class Bird extends Actor{
 
     public Bird() {
-        cellIndex = new Cell(220,150);
+        cellIndex = new Cell(640,115,Color.YELLOW);
     }
 
-    public void paint(Graphics g){
+    public void paint(Graphics g,Point mousePos){
         g.setColor(Color.YELLOW);
-        g.drawRect(cellIndex.x,cellIndex.y,Cell.size,Cell.size);
+        cellIndex.paint(g, mousePos);
     }
 }

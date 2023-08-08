@@ -1,14 +1,14 @@
 import java.awt.Color;
 import java.awt.Graphics;
+import java.awt.Point;
 
 public class Dog extends Actor{
 
     public Dog() {
-        cellIndex = new Cell(465,80);
+        cellIndex = new Cell(465,80,Color.GREEN);
     }
 
-    public void paint(Graphics g){
-        g.setColor(Color.GREEN);
-        g.drawRect(cellIndex.x,cellIndex.y,Cell.size,Cell.size);
+    public void paint(Graphics g, Point mousePos){
+        cellIndex.paint(g, mousePos);
     }
 }

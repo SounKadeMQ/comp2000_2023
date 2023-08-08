@@ -1,15 +1,18 @@
 import java.awt.Color;
 import java.awt.Graphics;
 import java.awt.Point;
+
 public class Cell extends java.awt.Rectangle{
   static int size = 35;
+  Color colour;
 
   // constructors
-  public Cell(int inX, int inY) {
+  public Cell(int inX, int inY, Color color) {
     super.x = inX;
     super.y = inY;
     super.height = size;
     super.width = size;
+    colour = color;
   }
 
   // methods
@@ -20,7 +23,7 @@ public class Cell extends java.awt.Rectangle{
     if(super.contains(mousePos)) {
       g.setColor(Color.GRAY);
     } else {
-      g.setColor(Color.WHITE);
+      g.setColor(colour);
     }
     g.fillRect(x, y, size, size);
     g.setColor(Color.BLACK);
