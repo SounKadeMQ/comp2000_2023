@@ -1,4 +1,5 @@
 import java.awt.Color;
+import java.awt.Polygon;
 import java.awt.Graphics;
 
 public abstract class Actor {
